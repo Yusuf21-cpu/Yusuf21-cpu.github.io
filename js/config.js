@@ -14,10 +14,10 @@ particlesJS(
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle",
+        "type": "image",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "#"
         },
         "polygon": {
           "nb_sides": 5
