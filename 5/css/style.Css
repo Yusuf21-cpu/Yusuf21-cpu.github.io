@@ -24,7 +24,7 @@ header a {
 
 header {
     padding-top: 17px;
-    background: url('../images/header.background.jpg') center center;
+    background: url('../images/header.background.webp') center center;
     background-repeat: no-repeat;
     height: 670px;
 }
@@ -226,11 +226,6 @@ section .container .row .col-3 {
 
 
 
-
-
-
-
-
 /* ----------section4-------------- */
 .section4 .container-fluid .col-lg-3 img {
     width: 100%;
@@ -265,8 +260,6 @@ section .container .row .col-3 {
     margin: 0;
     padding: 0;
 }
-
-
 
 
 /*  */
@@ -309,12 +302,6 @@ section .container .row .col-3 {
     font-size: 50px;
     color: white;
 }
-
-
-
-
-
-
 
 
 
@@ -469,8 +456,6 @@ main .container .row .col-auto h2 {
     transform: scale(1);
     opacity: 1;
 }
-
-
 
 
 
@@ -955,21 +940,6 @@ footer .container .row {
     width: 14px;
     height: 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
