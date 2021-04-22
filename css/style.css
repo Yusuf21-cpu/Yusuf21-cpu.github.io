@@ -17,18 +17,31 @@ header {
 .font {
   position: absolute;
 }
-.font p {
-  font-size: 25px;
-  color: white;
-  text-align: center;
-  font-family: "Permanent Marker", cursive;
+.text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
 }
-h1 {
-  font-size: 50px;
+.text-wrapper .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.font .text-wrapper .letters {
   color: white;
   text-align: center;
   font-family: "Permanent Marker", cursive;
   font-family: "Satisfy", cursive;
+  display: inline-block;
+  line-height: 1em;
 }
 .navbar .navbar-toggler {
   background: white;
@@ -37,20 +50,14 @@ h1 {
   padding-top: 50px;
   box-sizing: border-box;
 }
-.about{
+.about {
   background: #161623;
 }
-.about .first,.second{
+.about .first,
+.second {
   color: white;
 }
-/* .about::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(#f00,#f0f);
-} */
+
 .about .text-center {
   justify-content: space-around;
 }
@@ -86,26 +93,26 @@ h1 {
   background: green !important;
 }
 
-.about .crd{
+.about .crd {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width:1000px;
+  max-width: 1000px;
   flex-wrap: wrap;
   z-index: 1;
 }
 
-.about .crd .card-body{
+.about .crd .card-body {
   position: relative;
-  width:280px;
+  width: 280px;
   height: 200px;
   box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
-  overflow:hidden;
+  overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter:blur(5px);
+  backdrop-filter: blur(5px);
   color: rgb(194, 194, 223);
 }
