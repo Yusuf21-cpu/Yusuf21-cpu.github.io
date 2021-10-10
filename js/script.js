@@ -1,5 +1,31 @@
 $(document).ready(function () {
   new WOW().init();
+  const send = document.querySelector('#telegram_send')
+  const Token = `1823280913:AAF4Gk_76rf-m0TEfKiEuHVEdjaTSabDo44`
+  const id = `891318525`
+
+  send.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.querySelector('#contact-name').value
+    const email = document.querySelector('#contact-email').value
+    const message = document.querySelector('#contact-message').value
+    const mytext = `name=${name}%0AEmail:>${email}%0AMessage:${message}`
+
+    try {
+      fetch(`https://api.telegram.org/bot${Token}/sendMessage?chat_id=${id}&text=${mytext}`, {
+        method: 'post'
+      })
+        .then(response => {
+          alert("Success")
+      
+        })
+
+    } catch (error) {
+      console.log('error :>> ', error);
+
+    }
+
+  })
 });
 
 VanillaTilt.init(document.querySelectorAll(".about-card"), {
@@ -18,17 +44,17 @@ VanillaTilt.init(document.querySelectorAll(".flipInX"), {
 var textWrapper = document.querySelector('.font .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
+anime.timeline({ loop: true })
   .add({
     targets: '.font .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
+    scaleX: [0, 1],
+    opacity: [0.5, 1],
     easing: "easeInOutExpo",
     duration: 1500
   }).add({
     targets: '.font .letters',
-    opacity: [0,1],
-    translateX: [40,0],
+    opacity: [0, 1],
+    translateX: [40, 0],
     translateZ: 0,
     scaleX: [0.3, 1],
     easing: "easeOutExpo",

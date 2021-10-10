@@ -116,3 +116,14 @@ header {
   backdrop-filter: blur(5px);
   color: rgb(194, 194, 223);
 }
+
+.contact .card {
+  margin-bottom: 30px;
+}
+
+.contact .card .send {
+  color: black;
+}
+.contact .card .send:hover {
+  color: white;
+}

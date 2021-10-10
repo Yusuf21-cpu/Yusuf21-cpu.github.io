@@ -170,12 +170,12 @@
                                         a pariatur accusamus veniam.</p>
                                     <div class="row pt-5">
                                         <div class="col-md-8 col-xl-9 mb-4">
-                                            <form>
+                                            <form id="telegram_send">
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="md-form mb-0">
                                                             <div class="md-form mb-0">
-                                                                <input type="text" id="contact-name"
+                                                                <input type="text" name="name" id="contact-name"
                                                                     class="form-control">
                                                                 <label for="contact-name" class="">Your name</label>
                                                             </div>
@@ -184,37 +184,29 @@
                                                     <div class="col-md-6">
                                                         <div class="md-form mb-0">
                                                             <div class="md-form mb-0">
-                                                                <input type="text" id="contact-email"
+                                                                <input type="email" name="email" id="contact-email"
                                                                     class="form-control">
                                                                 <label for="contact-email" class="">Your email</label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="md-form mb-0">
-                                                            <input type="text" id="contact-Subject"
-                                                                class="form-control">
-                                                            <label for="contact-Subject" class="">Subject</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                                 <div class="row">
                                                     <div class="col-md-12">
 
                                                         <div class="md-form mb-0">
-                                                            <textarea type="text" id="contact-message"
+                                                            <textarea type="text" name="message" id="contact-message"
                                                                 class="md-textarea form-control" rows="3"></textarea>
                                                             <label for="contact-message">Your message</label>
                                                         </div>
-
                                                     </div>
                                                 </div>
+                                                <div class="text-center text-md-left mt-4">
+                                                    <input type="submit" class="btn btn-rounded send" value="Send" />
+                                                </div>
                                             </form>
-                                            <div class="text-center text-md-left mt-4">
-                                                <a class="btn btn-rounded">Send</a>
-                                            </div>
+
                                         </div>
                                         <div class="col-md-4 col-xl-3">
                                             <ul class="list-unstyled contact-icons">
