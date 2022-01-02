@@ -19,6 +19,9 @@ $(document).ready(function () {
           alert("Success")
       
         })
+      .finally(()=>{
+          window.location='https://yusuf591-cpu.github.io/'
+       })
 
     } catch (error) {
       console.log('error :>> ', error);
