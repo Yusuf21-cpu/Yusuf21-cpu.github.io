@@ -1,8 +1,8 @@
 $(document).ready(function () {
   new WOW().init();
   const send = document.querySelector('#telegram_send')
-  const Token = `2140444244:AAH11M5p2Bl6mmhlE4rguOtuvC1kzSddeQM`
-  const id = `2125560595`
+  const Token = `AAH11M5p2Bl6mmhlE4rguOtuvC1kzSddeQM`
+  const id = `2140444244`
 
   send.addEventListener('submit', async (e) => {
     e.preventDefault();
